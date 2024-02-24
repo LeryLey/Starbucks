@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="../assets/starbucks-logo-png.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Coffee Company</title>
+    <link rel="stylesheet" href="output.css" />
+    <script type="text/javascript" src="../jquery.js"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div id="container">
+      <!-- navbar -->
+      <nav
+        class="flex relative justify-between items-center py-4 md:px-10 px-4 bg-white shadow-xl"
+      >
+        <div class="flex items-center">
+          <img src="../assets/starbucks-logo-png.png" class="w-[53px]" />
+        </div>
+        <!-- menu  -->
+        <div
+          id="menu"
+          class="justify-between items-center md:flex md:relative md:w-full md:h-auto block absolute bg-white w-auto md:pr-0 pl-5 pr-40 top-full ml-10 duration-500 ease-out h-96 md:right-0 right-[-100%]"
+        >
+          <ul class="md:flex items-center md:space-x-5 md:space-y-0 space-y-4">
+            <li>
+              <a
+                href="index.html"
+                class="text-sm uppercase font-bold hover:text-[#006241]"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="rewards.html"
+                class="text-sm uppercase font-bold hover:text-[#006241]"
+                >Rewards</a
+              >
+            </li>
+            <li>
+              <a
+                href="card.html"
+                class="text-sm uppercase font-bold hover:text-[#006241]"
+                >Gift Cards</a
+              >
+            </li>
+          </ul>
+          <hr class="md:hidden my-4" />
+          <div class="md:space-x-4 md:flex items-center block left-0">
+            <span class="flex items-center hover:text-[#006241] my-2">
+              <ion-icon name="location" class="text-xl"></ion-icon>
+              <a href="#" class="font-medium hover:underline">Find a Store</a>
+            </span>
+            <button
+              type="button"
+              id="btnSignIn"
+              class="duration-500 border-[1px] outline-none border-[#006241] rounded-full h-8 font-medium text-sm px-4 hover:bg-[#006241] hover:text-white"
+            >
+              Sign In
+            </button>
+            <button
+              type="button"
+              id="btnJoin"
+              class="border-[1px] border-black bg-black text-white duration-500 hover:bg-gray-700 rounded-full h-8 font-medium text-sm px-4"
+            >
+              Join now
+            </button>
+          </div>
+        </div>
+        <div id="btnMenu" class="md:hidden">
+          <ion-icon
+            name="reorder-three-outline"
+            class="text-4xl cursor-pointer"
+          ></ion-icon>
+        </div>
+      </nav>
+      <div class="px-8 py-8">
+        <section class="grid grid-cols-2 max-lg:grid-cols-1 mb-8">
+          <article class="w-[100%]">
+            <img
+              src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88691.jpg"
+            />
+          </article>
+          <article
+            class="bg-[#006241] text-center justify-center flex items-center w-[100%] py-10"
+          >
+            <div>
+              <div class="">
+                <h2 class="text-white font-medium text-2xl">
+                  Get rewarded with Bank of America
+                </h2>
+              </div>
+              <div class="my-7">
+                <p class="text-white font-medium px-28 text-lg">
+                  Now Starbucks® Rewards members can link their eligible Bank of
+                  America card and enjoy special perks, like 2% Cash Back and
+                  Bonus Stars on qualifying Starbucks in-app purchases.*
+                </p>
+              </div>
+              <div class="text-white font-medium flex justify-center">
+                <a
+                  href="#"
+                  class="border-[1px] flex w-32 h-8 items-center justify-center rounded-full duration-500 hover:bg-white hover:text-[#006241]"
+                  >Get started</a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="grid grid-cols-2 max-lg:grid-cols-1 mb-8">
+          <article
+            class="bg-[#b2b267] w-[100%] flex items-center justify-center text-center py-10"
+          >
+            <div class="">
+              <h2 class="text-5xl font-medium text-white">
+                Pass the pistachios
+              </h2>
+              <div class="px-20">
+                <p class="text-white text-2xl my-7">
+                  Your favorite winter duo is back: the Pistachio Latte and
+                  Pistachio Cream Cold Brew.
+                </p>
+                <div class="flex justify-center">
+                  <a
+                    href="#"
+                    class="h-9 w-28 items-center justify-center flex border-[1px] border-white text-white font-medium rounded-full duration-500 hover:bg-white hover:text-[#b2b267]"
+                    >Order now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="w-[100%]">
+            <img
+              src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88120.jpg"
+              alt=""
+            />
+          </article>
+        </section>
+        <section class="grid grid-cols-2 max-lg:grid-cols-1 mb-8">
+          <article class="w-[100%]">
+            <img
+              src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88722.jpg"
+            />
+          </article>
+          <article
+            class="bg-[#cfd84d] text-center justify-center flex items-center w-[100%] h-full py-10"
+          >
+            <div>
+              <div class="px-32">
+                <h2 class="text-[#1e3932] font-medium text-5xl">
+                  Subtle, sweet and shaken
+                </h2>
+              </div>
+              <div class="my-7">
+                <p class="text-[#1e3932] font-medium px-28 text-lg">
+                  Our new Oleato Golden Foam™ Iced Shaken Espresso with
+                  Toffeenut is velvety smooth and deliciously lush.
+                </p>
+              </div>
+              <div class="text-white font-medium flex justify-center">
+                <a
+                  href="#"
+                  class="h-9 w-28 items-center justify-center flex border-[1px] border-[#1e3932] text-[#1e3932] font-medium rounded-full duration-500 hover:bg-white hover:border-white hover:text-[#b2b267]"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="grid grid-cols-2 max-lg:grid-cols-1 mb-8">
+          <article
+            class="bg-[#a5c4dc] w-[100%] flex items-center justify-center text-center py-10"
+          >
+            <div class="">
+              <h2 class="text-5xl font-medium text-[#1e3932]">
+                Pass the pistachios
+              </h2>
+              <div class="px-20">
+                <p class="text-[#1e3932] text-2xl my-7">
+                  Your favorite winter duo is back: the Pistachio Latte and
+                  Pistachio Cream Cold Brew.
+                </p>
+                <div class="flex justify-center">
+                  <a
+                    href="#"
+                    class="h-9 w-28 items-center justify-center flex border-[1px] border-[#1e3932] text-[#1e3932] font-medium rounded-full duration-500 hover:bg-white hover:text-[#1e3932] hover:border-white"
+                    >Order now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="w-[100%]">
+            <img
+              src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88725.jpg"
+              alt=""
+            />
+          </article>
+        </section>
+        <section class="grid grid-cols-2 max-lg:grid-cols-1 mb-8">
+          <article class="w-[100%]">
+            <img
+              src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88727.jpg"
+            />
+          </article>
+          <article
+            class="bg-[#337481] text-center justify-center flex items-center w-[100%] h-full py-10"
+          >
+            <div>
+              <div class="px-32">
+                <h2 class="text-white font-medium text-5xl">
+                  Here’s to coffee
+                </h2>
+              </div>
+              <div class="my-7">
+                <p class="text-white font-medium px-28 text-lg">
+                  A returning-favorite, Starbucks Tribute Blend® celebrates four
+                  beloved coffee-growing regions.
+                </p>
+              </div>
+              <div class="text-white font-medium flex justify-center">
+                <a
+                  href="#"
+                  class="h-9 w-28 items-center justify-center flex border-[1px] border-white text-white font-medium rounded-full duration-500 hover:bg-white hover:border-white hover:text-[#337481]"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="grid grid-cols-2 max-lg:grid-cols-1 mb-8">
+          <article
+            class="bg-[#006241] w-[100%] flex items-center justify-center text-center py-10"
+          >
+            <div class="">
+              <h2 class="text-4xl font-medium text-white">
+                “A smile makes a big difference.”
+              </h2>
+              <div class="px-20 my-7">
+                <p class="mb-7 text-white text-xl">
+                  - Brenda, Starbucks Partner (Employee)
+                </p>
+                <p class="text-white text-2xl">
+                  Our partners uplift each other and their communities every
+                  day.
+                </p>
+                <div class="flex justify-center mt-7">
+                  <a
+                    href="#"
+                    class="h-9 w-28 items-center justify-center flex border-[1px] border-white text-white font-medium rounded-full duration-500 hover:bg-white hover:text-[#1e3932] hover:border-white"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="w-[100%]">
+            <img
+              src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88575.jpg"
+              alt=""
+            />
+          </article>
+        </section>
+        <div class="flex justify-center">
+          <p class="text-center md:w-[48%] w-[100%]">
+            *At participating stores only. Some restrictions apply. Linked Card
+            members will earn 2% Cash Back on the full purchase price of every
+            Qualifying Purchase. Bonus Star offer excludes taxes and tips. Stars
+            may not be earned on purchases of alcohol or on reloads of Starbucks
+            Cards that are not registered. For full details,
+            <a href="#" class="underline hover:text-[#006241]"
+              >visit www.starbucks.com/bofa</a
+            >. Bank of America, N.A. Member FDIC.
+          </p>
+        </div>
+      </div>
+      <div id="footer">
+        <div
+          class="border-t-2 border-b-2 py-6 px-10 grid md:grid-cols-5 grid-cols-3 max-lg:grid-cols-2 w-auto"
+        >
+          <div>
+            <h2 class="text-2xl">About Us</h2>
+            <ul class="my-4 space-y-4 text-gray-500">
+              <li>Our Company</li>
+              <li>Our Coffee</li>
+              <li>Stories and News</li>
+              <li>Starbucks Archive</li>
+              <li>Invester Relation</li>
+              <li>Invester Relation</li>
+              <li>Customer Service</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-2xl">About Us</h2>
+            <ul class="my-4 space-y-4 text-gray-500">
+              <li>Our Company</li>
+              <li>Our Coffee</li>
+              <li>Stories and News</li>
+              <li>Starbucks Archive</li>
+              <li>Invester Relation</li>
+              <li>Invester Relation</li>
+              <li>Customer Service</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-2xl">About Us</h2>
+            <ul class="my-4 space-y-4 text-gray-500">
+              <li>Our Company</li>
+              <li>Our Coffee</li>
+              <li>Stories and News</li>
+              <li>Starbucks Archive</li>
+              <li>Invester Relation</li>
+              <li>Invester Relation</li>
+              <li>Customer Service</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-2xl">About Us</h2>
+            <ul class="my-4 space-y-4 text-gray-500">
+              <li>Our Company</li>
+              <li>Our Coffee</li>
+              <li>Stories and News</li>
+              <li>Starbucks Archive</li>
+              <li>Invester Relation</li>
+              <li>Invester Relation</li>
+              <li>Customer Service</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-2xl">About Us</h2>
+            <ul class="my-4 space-y-4 text-gray-500">
+              <li>Our Company</li>
+              <li>Our Coffee</li>
+              <li>Stories and News</li>
+              <li>Starbucks Archive</li>
+              <li>Invester Relation</li>
+              <li>Invester Relation</li>
+              <li>Customer Service</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+        <div class="px-10 py-3">
+          <div id="social-media" class="flex text-3xl space-x-4">
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </div>
+          <div class="my-8">
+            <p class="flex text-lg">
+              Privacy Notice | Terms of Use | Do Not Share My Personal
+              Information | CA Supply Chain Act | Accessibility | Cookie
+              Preferences
+            </p>
+          </div>
+          <span class="text-gray-500"
+            >© 2024 Starbucks Coffee Company. All rights reserved.</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="../app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

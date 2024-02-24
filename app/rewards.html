@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Card</title>
+    <link rel="stylesheet" href="output.css" />
+    <script type="text/javascript" src="../jquery.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <nav
+        class="flex relative justify-between items-center py-4 md:px-10 px-4 bg-white"
+      >
+        <div class="flex items-center">
+          <img src="../assets/starbucks-logo-png.png" class="w-[53px]" />
+        </div>
+        <!-- menu  -->
+        <div
+          id="menu"
+          class="justify-between items-center md:flex md:relative md:w-full md:h-auto block absolute bg-white w-auto md:pr-0 pl-5 pr-40 top-full ml-10 duration-500 ease-out h-96 md:right-0 right-[-100%] z-10"
+        >
+          <ul class="md:flex items-center md:space-x-5 md:space-y-0 space-y-4">
+            <li>
+              <a
+                href="index.html"
+                class="text-sm uppercase font-bold hover:text-[#006241]"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="rewards.html"
+                class="text-sm uppercase font-bold hover:text-[#006241]"
+                >Rewards</a
+              >
+            </li>
+            <li>
+              <a
+                href="card.html"
+                class="text-sm uppercase font-bold hover:text-[#006241]"
+                >Gift Cards</a
+              >
+            </li>
+          </ul>
+          <hr class="md:hidden my-4" />
+          <div class="md:space-x-4 md:flex items-center block left-0">
+            <span class="flex items-center hover:text-[#006241] my-2">
+              <ion-icon name="location" class="text-xl"></ion-icon>
+              <a href="#" class="font-medium hover:underline">Find a Store</a>
+            </span>
+            <button
+              type="button"
+              id="btnSignIn"
+              class="duration-500 border-[1px] outline-none border-[#006241] rounded-full h-8 font-medium text-sm px-4 hover:bg-[#006241] hover:text-white"
+            >
+              Sign In
+            </button>
+            <button
+              type="button"
+              id="btnJoin"
+              class="border-[1px] bg-gray-600 border-black text-white duration-500 hover:bg-gray-700 rounded-full h-8 font-medium text-sm px-4"
+            >
+              Join now
+            </button>
+          </div>
+        </div>
+        <div id="btnMenu" class="md:hidden">
+          <ion-icon
+            name="reorder-three-outline"
+            class="text-4xl cursor-pointer"
+          ></ion-icon>
+        </div>
+      </nav>
+      <section class="w-full relative overflow-hidden">
+        <span
+          class="bg-[#1e3932] text-white w-full flex py-3 px-10 font-medium sticky"
+          >STARBUCKS® REWARDS</span
+        >
+        <div class="h-screen flex bg-[#006241]">
+          <!-- Left Side -->
+          <div class="flex flex-col justify-center text-white px-10 space-y-7">
+            <h2 class="text-5xl font-medium">
+              FREE COFFEE <br />
+              IS A TAP AWAY
+            </h2>
+            <div class="space-y-7">
+              <span class="text-xl"> Join now to start earning Rewards. </span>
+              <div class="space-y-7">
+                <a
+                  href="#"
+                  class="bg-transparent border-2 text-white rounded-full py-1 px-3 duration-500 hover:bg-white hover:text-black"
+                  >Join now</a
+                >
+                <div>
+                  <p>
+                    Or
+                    <a href="#" class="underline hover:text-blue-500"
+                      >join in the app</a
+                    >
+                    for the best experience
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="" class="absolute w-full" />
+        </div>
+      </section>
+      <section id="items" class="py-10 px-20">
+        <div class="text-center space-y-4">
+          <h1 class="text-3xl font-medium">Getting started is easy</h1>
+          <div>
+            <span> Earn Stars and ger rewarded in few easy steps. </span>
+          </div>
+        </div>
+        <!-- items  -->
+        <div class="grid grid-cols-3 my-20">
+          <div class="flex flex-col items-center text-center">
+            <h2
+              class="border-2 border-[#006241] rounded-full w-12 h-12 font-medium text-xl flex items-center justify-center"
+            >
+              1
+            </h2>
+            <div>
+              <h3 class="text-xl font-medium my-4">Create an account</h3>
+              <div>
+                <p class="w-96 font-medium">
+                  To get started,<a href="#" class="underline text-[#006241]"
+                    >join now</a
+                  >. You can also
+                  <a href="#" class="underline text-[#006241]"
+                    >join in the app</a
+                  >
+                  to get access to the full range of Starbucks® Rewards
+                  benefits.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <h2
+              class="border-2 border-[#006241] rounded-full w-12 h-12 font-medium text-xl flex items-center justify-center"
+            >
+              2
+            </h2>
+            <div>
+              <h3 class="text-xl font-medium my-4">
+                Order and pay how you’d like
+              </h3>
+              <div>
+                <p class="w-96 font-medium">
+                  Use cash, credit/debit card or save some time and pay right
+                  through the app. You’ll collect Stars all ways.
+                  <a href="#" class="underline text-[#006241]">Learn how</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <h2
+              class="border-2 border-[#006241] rounded-full w-12 h-12 font-medium text-xl flex items-center justify-center"
+            >
+              3
+            </h2>
+            <div>
+              <h3 class="text-xl font-medium my-4">Earn Stars, get Rewards</h3>
+              <div>
+                <p class="w-96 font-medium">
+                  As you earn Stars, you can redeem them for Rewards—like free
+                  food, drinks, and more. Start redeeming with as little as 25
+                  Stars!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="favorite"
+        class="pt-10 bg-blue-50 flex justify-center flex-col"
+      >
+        <div class="space-y-14 text-black">
+          <h3 class="text-3xl font-medium text-center">
+            Get your favorites for free
+          </h3>
+          <div>
+            <ul id="stars" class="grid grid-cols-5 space-x-7 px-96 mb-4">
+              <li id="star1" class="flex cursor-pointer">
+                <span class="text-3xl font-medium">25</span>
+                <ion-icon name="star" class="text-orange-400"></ion-icon>
+              </li>
+              <li id="star2" class="flex cursor-pointer">
+                <span class="text-3xl font-medium">100</span>
+                <ion-icon name="star" class="text-orange-400"></ion-icon>
+              </li>
+              <li id="star3" class="flex cursor-pointer">
+                <span class="text-3xl font-medium">200</span>
+                <ion-icon name="star" class="text-orange-400"></ion-icon>
+              </li>
+              <li id="star4" class="flex cursor-pointer">
+                <span class="text-3xl font-medium">300</span>
+                <ion-icon name="star" class="text-orange-400"></ion-icon>
+              </li>
+              <li id="star5" class="flex cursor-pointer">
+                <span class="text-3xl font-medium">400</span>
+                <ion-icon name="star" class="text-orange-400"></ion-icon>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- change stars  -->
+        <div
+          id="box"
+          class="flex justify-center items-center bg-blue-200 w-full"
+        >
+          <img
+            src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/025.png"
+            class="w-[30%]"
+          />
+          <div>
+            <h2 id="title" class="text-2xl font-medium">
+              Customize your drink
+            </h2>
+            <div class="mt-4">
+              <p id="description" class="w-96">
+                Make your drink just right with an extra espresso shot, nondairy
+                milk or a dash of your favorite syrup.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="../app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
